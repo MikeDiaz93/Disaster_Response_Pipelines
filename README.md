@@ -3,7 +3,7 @@
 
 ## Second Project of the Data Science Nanodegree Udacity
 
-<a name="descripton"></a>
+<a name="Introdutction"></a>
 ## Introduction 
 
 This project is part of the Udacity's Data Scientist Nanodegre in collaboration with Figure Eight.
@@ -15,13 +15,13 @@ Data Processing, ETL Pipeline to extract data from source, clean data and save t
 Machine Learning Pipeline to train a model able to classify text message in categories
 Web App to show model results in real time.
 
-<a name="descripton"></a>
+<a name="Goal"></a>
 
 ## Goal 
 
 The goal of this project is to analyze disaster data from Figure Eight to build a model for an API that classifies disaster messages.
 
-<a name="descripton"></a>
+<a name="Dependencies"></a>
 
 ## Dependencies 
 
@@ -38,7 +38,7 @@ The goal of this project is to analyze disaster data from Figure Eight to build 
 *Pickle
 
 
-<a name="descripton"></a>
+<a name="Run the Web App"></a>
 
 ## Run the Web App 
 
@@ -57,7 +57,7 @@ Run the following command in the app's directory to run your web app. python run
 Go to http://0.0.0.0:3001/
 
 
-<a name="descripton"></a>
+<a name="Files descriptions"></a>
 
 ## Files descriptions 
 
