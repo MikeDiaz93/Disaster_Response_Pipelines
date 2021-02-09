@@ -16,30 +16,27 @@ Machine Learning Pipeline to train a model able to classify text message in cate
 Web App to show model results in real time.
 
 <a name="Goal"></a>
-
 ## Goal 
 
 The goal of this project is to analyze disaster data from Figure Eight to build a model for an API that classifies disaster messages.
 
 <a name="Dependencies"></a>
-
 ## Dependencies 
 
-*Python 3.5+ 
-*NumPy  
-*Sciki-Learn
-*SQLalchemy
-*Pandas
-*NLTK
-*Plotly
-*SciPy
-*Flask
-*Sys
-*Pickle
+* Python 3.5+ 
+* NumPy  
+* Sciki-Learn
+* SQLalchemy
+* Pandas
+* NLTK
+* Plotly
+* SciPy
+* Flask
+* Sys
+* Pickle
 
 
 <a name="Run the Web App"></a>
-
 ## Run the Web App 
 
 Run the following commands in the project's root directory to set up your database and model.
@@ -58,7 +55,6 @@ Go to http://0.0.0.0:3001/
 
 
 <a name="Files descriptions"></a>
-
 ## Files descriptions 
 
 
