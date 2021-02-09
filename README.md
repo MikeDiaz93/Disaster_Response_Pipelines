@@ -25,17 +25,17 @@ The goal of this project is to analyze disaster data from Figure Eight to build 
 
 ## Dependencies 
 
-Python 3.5+ 
-NumPy  
-Sciki-Learn
-SQLalchemy
-Pandas
-NLTK
-Plotly
-SciPy
-Flask
-Sys
-Pickle
+*Python 3.5+ 
+*NumPy  
+*Sciki-Learn
+*SQLalchemy
+*Pandas
+*NLTK
+*Plotly
+*SciPy
+*Flask
+*Sys
+*Pickle
 
 
 <a name="descripton"></a>
