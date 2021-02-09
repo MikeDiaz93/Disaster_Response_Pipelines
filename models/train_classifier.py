@@ -163,7 +163,7 @@ def main():
         print('Loading data...\n DATABASE: {}'.format(database_filepath))
         #split data 
       
-        X, y, category_names = load_data(database_filepath = "data/DisasterResponse.db")
+        X, y, category_names = load_data(database_filepath)
         print("sali")
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
