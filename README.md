@@ -1,4 +1,4 @@
-# Disaster_Response_Pipelines
+# Disaster Response Pipelines
 
 
 Second Project of Data Science Nanodegree Udacity
