@@ -1,10 +1,10 @@
 # Disaster Response Pipelines
 
 
-Second Project of Data Science Nanodegree Udacity
+## Second Project of the Data Science Nanodegree Udacity
 
-
-Introduction 
+<a name="descripton"></a>
+## Introduction 
 
 This project is part of the Udacity's Data Scientist Nanodegre in collaboration with Figure Eight.
 The initial dataset contains pre-labelled tweet and messages from real-life disaster. The aim of the project is to build a Natural Language Processing tool that categorize messages.
@@ -15,13 +15,15 @@ Data Processing, ETL Pipeline to extract data from source, clean data and save t
 Machine Learning Pipeline to train a model able to classify text message in categories
 Web App to show model results in real time.
 
+<a name="descripton"></a>
 
-Goal 
+## Goal 
 
 The goal of this project is to analyze disaster data from Figure Eight to build a model for an API that classifies disaster messages.
 
+<a name="descripton"></a>
 
-Dependencies 
+## Dependencies 
 
 Python 3.5+ 
 NumPy  
@@ -36,8 +38,9 @@ Sys
 Pickle
 
 
+<a name="descripton"></a>
 
-Run the Web App 
+## Run the Web App 
 
 Run the following commands in the project's root directory to set up your database and model.
 
@@ -54,8 +57,9 @@ Run the following command in the app's directory to run your web app. python run
 Go to http://0.0.0.0:3001/
 
 
+<a name="descripton"></a>
 
-Files descriptions 
+## Files descriptions 
 
 
 data/process_data.py: python script that reads two csv files (the messages and the categories files) and creates a sql alchemy database.
