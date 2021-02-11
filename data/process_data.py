@@ -5,7 +5,15 @@ from sqlalchemy import create_engine
  
 
 def load_data(messages_filepath, categories_filepath):
-    # load messages dataset
+    """
+    Load Data Function 
+    Arguments:
+        Messages filepath  -> Filepath of the messages dataset
+        Categories filepath -> Filepath of the Categories datset 
+    Output:
+        df -> Merged dataframe by id (messages and categories data) 
+    """
+    #read csv s 
     messages = pd.read_csv(messages_filepath) 
     
     # load categories dataset
@@ -18,7 +26,13 @@ def load_data(messages_filepath, categories_filepath):
 
 
 def clean_data(df):
-    # create a dataframe of the 36 individual category columns
+    """
+    Clean Data Function 
+    Arguments:
+        Df -> Dataframe of messages and categories data 
+    Output: 
+        Df -> Cleaned and transformed data
+    """
     categories = df.categories.str.split(pat=';', expand=True)
 
     # select the first row of the categories dataframe
@@ -36,7 +50,7 @@ def clean_data(df):
         # convert column from string to numeric
         categories[column] = categories[column].astype(np.int)
 
-    #replace `categories` column in `df` with new category columns.
+    #replace 'categories' column in 'df' with new category columns.
     # drop the original categories column from `df`
     df.drop('categories',axis=1)
 
@@ -50,6 +64,12 @@ def clean_data(df):
 
 
 def save_data(df, database_filename):
+    """
+    Save Data Function 
+    Arguments: 
+        DF -> Messages and Categories dataframe
+        Database Filename -> The file name we want to call it 
+    """
     engine = create_engine('sqlite:///'+ database_filename)
     df.to_sql(name = 'DisasterResponse', con = engine, index=False, if_exists = 'replace')
     
