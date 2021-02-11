@@ -43,7 +43,7 @@ Run the following commands in the project's root directory to set up your databa
 
 To run ETL pipeline that cleans data and stores in database:
 
-python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
+python data/process_data.py data/messages.csv data/categories.csv data/DisasterResponse.db
 
 To run ML pipeline that trains classifier and saves it as a pickle file:
 
@@ -60,9 +60,9 @@ Go to http://0.0.0.0:3001/
 
 data/process_data.py: python script that reads two csv files (the messages and the categories files) and creates a sql alchemy database.
 
-data/disaster_messages.csv: csv file with the messages data.
+data/messages.csv: csv file with the messages data.
 
-data/disaster_categories.csv: csv table with the categories data (for each message).
+data/categories.csv: csv table with the categories data (for each message).
 
 data/DisasterResponse.db: output of the process_data.py script
 
