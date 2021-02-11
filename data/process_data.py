@@ -33,13 +33,14 @@ def clean_data(df):
     Output: 
         Df -> Cleaned and transformed data
     """
+    #create df of 36 individual category columns 
     categories = df.categories.str.split(pat=';', expand=True)
 
     # select the first row of the categories dataframe
-    row = categories.iloc[0,:]
-    category_colnames = row.apply(lambda x:x[:-2])
+    row = categories.iloc[0]
+    category_colnames = row.apply(lambda x: x[:-2]).values.tolist()
 
-    # rename the columns of `categories`
+    # rename the columns of 'categories'
     categories.columns = category_colnames
 
     #convert category values to just numbers 0 or 1.
@@ -51,7 +52,7 @@ def clean_data(df):
         categories[column] = categories[column].astype(np.int)
 
     #replace 'categories' column in 'df' with new category columns.
-    # drop the original categories column from `df`
+    # drop the original categories column from 'df'
     df.drop('categories',axis=1)
 
     # concatenate the original dataframe with the new `categories` dataframe
