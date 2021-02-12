@@ -59,7 +59,10 @@ def clean_data(df):
     df = pd.concat([df,categories], join='inner', axis=1)
     
     # drop duplicates
-    df = df.drop_duplicates()
+    df = df.drop_duplicates(subset = 'id')
+    
+    # set labels in the 'related' category to binary 
+    df.loc[df['related'] > 1,'related'] = 0  
 
     return df
 
