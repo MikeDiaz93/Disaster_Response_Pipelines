@@ -96,24 +96,8 @@ def build_pipeline():
         ])),
         ('classifier', MultiOutputClassifier(RandomForestClassifier()))
     ]) 
-    #Look for the bes parameters 
-#    parameters = {
-#    'features__text_pipeline__count_vectorizer__ngram_range': ((1, 1), (1, 2)),
-#    'features__text_pipeline__count_vectorizer__max_df': (0.5, 1.0),
-#    'features__text_pipeline__count_vectorizer__max_features': (None, 20),
-#    'features__text_pipeline__tfidf_transformer__use_idf': (True, False),
-#    'clf__n_estimators': [10, 100],
-#    'clf__learning_rate': [0.01, 0.1],
-#    'features__transformer_weights': (
-#        {'text_pipeline': 1, 'starting_verb': 0.5},
-#        {'text_pipeline': 0.5, 'starting_verb': 1},
-#        {'text_pipeline': 0.8, 'starting_verb': 1},
-#    )
-#    }
-    #Apply Gridsearch and fit 
-#    model_pipeline = GridSearchCV(pipeline, param_grid= parameters, verbose = 2, n_jobs = -1)
-
-    return pipeline #model_pipeline
+   
+    return pipeline 
 
 def evaluate_model(model_pipeline, X_test, y_test, category_names):
     """
